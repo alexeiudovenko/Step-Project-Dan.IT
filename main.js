@@ -4,10 +4,7 @@
 
 $(function() {
     $("ul.tabs").on("click", "li:not(.active)", function() {
-        $(this)
-            .addClass("active")
-            .siblings()
-            .removeClass("active");
+        $(this).addClass("active").siblings().removeClass("active");
         $("div.tabs-content")
             .find("div.tab-content")
             .removeClass("active")
@@ -78,12 +75,14 @@ $(function carousel() {
         .animate({ bottom: +12 + "px" }, 300);
 
     function moveTo(hero) {
-        $("#sliderList li")
-            .removeClass("active")
-            .eq(hero)
-            .addClass("active");
+        $("#sliderList li").removeClass("active").eq(hero).addClass("active");
         $("#sliderList li.active").animate({ bottom: +12 + "px" }, 300);
-        $(".hero-list").animate({ left: -163 * hero + "px" }, 300);
+        $(".hero-list").animate({ opacity: 1 }, 3000);
+
+        $(`#${$("#sliderList").find(".active").attr("data-id")}`)
+            .addClass("active")
+            .siblings()
+            .removeClass("active");
     }
 
     $("#leftButton").click(function() {
@@ -111,11 +110,11 @@ $(function carousel() {
 });
 
 /*MASONRY */
-// external js: masonry.pkgd.js
-var $grid = $(".grid").masonry({
+
+let $grid = $(".grid").masonry({
     itemSelector: ".grid-item",
     percentPosition: true,
-    columnWidth: ".grid-sizer"
+    columnWidth: ".grid-sizer",
 });
 // layout Masonry after each image loads
 $grid.imagesLoaded().progress(function() {
@@ -123,8 +122,8 @@ $grid.imagesLoaded().progress(function() {
 });
 
 let elements = $(".grid-item");
-var $nextElements = $(elements);
-var $items = [];
+let $nextElements = $(elements);
+let $items = [];
 $(function masonryLoadmore() {
     $("#masonryLoader").hide();
     for (let i = 1; i < 8; i++) {
@@ -142,3 +141,12 @@ $(function masonryLoadmore() {
         }, 1000);
     });
 });
+
+$(".grid-item").hover(
+    function() {
+        $(this).find(".cover-item-gallery").fadeIn();
+    },
+    function() {
+        $(this).find(".cover-item-gallery").fadeOut();
+    }
+);
