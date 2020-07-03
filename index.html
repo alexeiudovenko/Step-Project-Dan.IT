@@ -36,9 +36,10 @@
                         <li><a href="#">blog</a></li>
                         <li><a href="#">team</a></li>
                         <li><a href="#">contact</a></li>
+                        <li><a href="#" class="navbar-search"><i class="fas fa-search"></i></a></li>
                     </ul>
                 </div>
-                <div class="navbar-search"><i class="fas fa-search"></i></div>
+                <!-- <div class="navbar-search"><i class="fas fa-search"></i></div> -->
             </div>
         </div>
         <div class="container main-title">
@@ -683,51 +684,67 @@
             <div class="review-icon">
                 <img src="./img/icons/Forma_5.svg" alt="" />
             </div>
-            <div class="review-caption">
-                <p>
+            <!-- <div class="review-caption">
+                <p class="review-caption">
                     Integer dignissim, augue tempus ultricies luctus, quam dui laoreet sem, non dictum odio nisi quis massa. Morbi pulvinar odio eget aliquam facilisis. Tempus ultricies luctus, quam dui laoreet sem, non dictum odio nisi quis massa. Morbi pulvinar odio eget
                     aliquam facilisis.
                 </p>
-            </div>
+            </div> -->
             <div id="carousel" class="carousel">
-                <ul class="hero-list">
-                    <li class="hero-item">
+                <ul  class="hero-list">
+                    <li id='slide1' class="hero-item active">
+                        <p class="review-caption">
+                            Integer dignissim, augue tempus ultricies luctus, quam dui laoreet sem, non dictum odio nisi quis massa. Morbi pulvinar odio eget aliquam facilisis. Tempus ultricies luctus, quam dui laoreet sem, non dictum odio nisi quis massa. Morbi pulvinar odio eget
+                            aliquam facilisis.
+                        </p>
                         <p>Name1</p>
                         <p>Designer1</p>
                         <img src="./img/designers/1.png" alt="" />
                     </li>
-                    <li class="hero-item">
+                    <li  id='slide2' class="hero-item">
+                        <p class="review-caption">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, temporibus nam? Laboriosam quis similique facilis, harum iure provident reiciendis vel totam voluptates iusto accusantium nemo libero tenetur, suscipit pariatur possimus?
+                        </p>
                         <p>Name2</p>
                         <p>Designer2</p>
                         <img src="./img/designers/2.png" alt="" />
                     </li>
-                    <li class="hero-item">
+                    <li id='slide3' class="hero-item">
+                        <p class="review-caption">
+                            Integer dignissim, augue tempus ultricies luctus, quam dui laoreet sem, non dictum odio nisi quis massa. Morbi pulvinar odio eget aliquam facilisis. Tempus ultricies luctus, quam dui laoreet sem, non dictum odio nisi quis massa. Morbi pulvinar odio eget
+                            aliquam facilisis.
+                        </p>
                         <p>Name3</p>
                         <p>Designer3</p>
                         <img src="./img/designers/3.png" alt="" />
                     </li>
-                    <li class="hero-item">
+                    <li id='slide4' class="hero-item">
+                        <p class="review-caption">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, temporibus nam? Laboriosam quis similique facilis, harum iure provident reiciendis vel totam voluptates iusto accusantium nemo libero tenetur, suscipit pariatur possimus?
+                        </p>
                         <p>Name4</p>
                         <p>Designer4</p>
                         <img src="./img/designers/4.png" alt="" />
                     </li>
                 </ul>
+
+
             </div>
             <div class="carousel-navigation">
                 <div id="leftButton" class="left-button">
-                    <i class="fas fa-angle-left"></i>
+                    <i  class="fas fa-angle-left"></i>
                 </div>
                 <ul id="sliderList" class="small-heroes-list">
-                    <li class="small-hero-item active">
+                    <li data-id='slide1' class="small-hero-item active">
                         <img src="./img/designers/1.png" alt="" />
                     </li>
-                    <li class="small-hero-item">
+                    <li data-id='slide2' class="small-hero-item">
                         <img src="./img/designers/2.png" alt="" />
                     </li>
-                    <li class="small-hero-item">
+                    <li data-id='slide3' class="small-hero-item">
                         <img src="./img/designers/3.png" alt="" />
                     </li>
-                    <li class="small-hero-item">
+                    <li data-id='slide4' class="small-hero-item">
                         <img src="./img/designers/4.png" alt="" />
                     </li>
                 </ul>
@@ -752,45 +769,129 @@
                 <div class="grid-sizer"></div>
                 <div class="grid-item">
                     <img src="./img/masonry/1.png" alt="" />
+                    <div class="cover-item-gallery">
+                        <a href="#void">
+                            <i class="fas fa-search"></i>
+                            <i class="fas fa-expand-alt"></i>
+                        </a>
+                    </div>
                 </div>
                 <div class="grid-item">
                     <img src="./img/masonry/2.png" alt="" />
+                    <div class="cover-item-gallery">
+                        <a href="#void">
+                            <i class="fas fa-search"></i>
+                            <i class="fas fa-expand-alt"></i>
+                        </a>
+                    </div>
                 </div>
                 <div class="grid-item">
                     <img src="./img/masonry/3.png" alt="" />
+                    <div class="cover-item-gallery">
+                        <a href="#void">
+                            <i class="fas fa-search"></i>
+                            <i class="fas fa-expand-alt"></i>
+                        </a>
+                    </div>
                 </div>
                 <div class="grid-item">
                     <img src="./img/masonry/4.png" alt="" />
+                    <div class="cover-item-gallery">
+                        <a href="#void">
+                            <i class="fas fa-search"></i>
+                            <i class="fas fa-expand-alt"></i>
+                        </a>
+                    </div>
                 </div>
                 <div class="grid-item">
                     <img src="./img/masonry/5.png" alt="" />
+                    <div class="cover-item-gallery">
+                        <a href="#void">
+                            <i class="fas fa-search"></i>
+                            <i class="fas fa-expand-alt"></i>
+                        </a>
+                    </div>
                 </div>
                 <div class="grid-item">
                     <img src="./img/masonry/6.png" alt="" />
+                    <div class="cover-item-gallery">
+                        <a href="#void">
+                            <i class="fas fa-search"></i>
+                            <i class="fas fa-expand-alt"></i>
+                        </a>
+                    </div>
                 </div>
                 <div class="grid-item">
                     <img src="./img/masonry/7.png" alt="" />
+                    <div class="cover-item-gallery">
+                        <a href="#void">
+                            <i class="fas fa-search"></i>
+                            <i class="fas fa-expand-alt"></i>
+                        </a>
+                    </div>
                 </div>
                 <div class="grid-item">
                     <img src="./img/masonry/1.png" alt="" />
+                    <div class="cover-item-gallery">
+                        <a href="#void">
+                            <i class="fas fa-search"></i>
+                            <i class="fas fa-expand-alt"></i>
+                        </a>
+                    </div>
                 </div>
                 <div class="grid-item">
                     <img src="./img/masonry/2.png" alt="" />
+                    <div class="cover-item-gallery">
+                        <a href="#void">
+                            <i class="fas fa-search"></i>
+                            <i class="fas fa-expand-alt"></i>
+                        </a>
+                    </div>
                 </div>
                 <div class="grid-item">
                     <img src="./img/masonry/3.png" alt="" />
+                    <div class="cover-item-gallery">
+                        <a href="#void">
+                            <i class="fas fa-search"></i>
+                            <i class="fas fa-expand-alt"></i>
+                        </a>
+                    </div>
                 </div>
                 <div class="grid-item">
                     <img src="./img/masonry/4.png" alt="" />
+                    <div class="cover-item-gallery">
+                        <a href="#void">
+                            <i class="fas fa-search"></i>
+                            <i class="fas fa-expand-alt"></i>
+                        </a>
+                    </div>
                 </div>
                 <div class="grid-item">
                     <img src="./img/masonry/5.png" alt="" />
+                    <div class="cover-item-gallery">
+                        <a href="#void">
+                            <i class="fas fa-search"></i>
+                            <i class="fas fa-expand-alt"></i>
+                        </a>
+                    </div>
                 </div>
                 <div class="grid-item">
                     <img src="./img/masonry/6.png" alt="" />
+                    <div class="cover-item-gallery">
+                        <a href="#void">
+                            <i class="fas fa-search"></i>
+                            <i class="fas fa-expand-alt"></i>
+                        </a>
+                    </div>
                 </div>
                 <div class="grid-item">
                     <img src="./img/masonry/7.png" alt="" />
+                    <div class="cover-item-gallery">
+                        <a href="#void">
+                            <i class="fas fa-search"></i>
+                            <i class="fas fa-expand-alt"></i>
+                        </a>
+                    </div>
                 </div>
             </div>
             <button id="masonryLoadMore" class="btn-template work-btn">
